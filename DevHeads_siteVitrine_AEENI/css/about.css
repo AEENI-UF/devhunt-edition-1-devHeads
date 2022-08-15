@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+html {
+    background-color: #DFDFDF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(59, 59, 53);
+}
+
+.navbar-links {
+    animation: 0.5s;
+    color: rgb(14, 13, 13);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.brand-title:hover {
+    background-color: rgb(54, 62, 70);
+
+}
+
+.brand-title {
+    color: #557391;
+    animation: 0.5s;
+
+}
+
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 30%;
+        float: right;
+        margin-left: em;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.brand-title span {
+    color: rgb(238, 126, 20);   
+}
+
+.navbar-links span {
+    color: rgb(238, 126, 20);
+}
+.brand-title a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* backgrounnnd! */
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/hah.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 40s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: rgb(238, 126, 20);
+}
+.content a{
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.content a:hover{
+    background: #034e88;
+    color: #fff;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(../images/1.jpg);
+    }
+    11%
+    {
+        background-image: url(../images/2.jpg);
+    }
+    22%
+    {
+        background-image: url(../images/3.jpg);
+    }
+    33%
+    {
+        background-image: url(../images/4.jpg);
+    }
+    44%
+    {
+        background-image: url(../images/5.jpg);
+    }
+    55%
+    {
+        background-image: url(../images/6.jpg);
+    }
+    66%
+    {
+        background-image: url(../images/7.jpg);
+    }
+    77%
+    {
+        background-image: url(../images/8.jpg);
+    }
+    88%
+    {
+        background-image: url(../images/9.jpg);
+    }
+    100%
+    {
+        background-image: url(../images/10.jpg);
+    }
+}

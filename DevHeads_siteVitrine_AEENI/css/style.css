@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    border-color: rgb(187, 98, 47);
+    background-color:rgb(54, 54, 58);
+}
+.haut{
+    background-image: url(../image/background.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position : relative;
+}
+.menu-bar{
+    background:rgb(54, 54, 58);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    margin: 15px;
+    padding: 15px;
+    z-index: 2;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-bar .sub-menu1 ul li .image-sub{
+    width: 25px;
+    border: 0.2px solid black;
+    border-radius: 50%;
+    float: right;
+    bottom: 2px;
+}
+.active, .menu-bar ul li:hover{
+    background: #7e5235c5;
+    border-radius: 3px;
+    transition: 0.5s;
+    box-shadow: 5px 2px 3px black;
+}
+.menu-bar ul li a img{
+    width: 20px;
+    margin-right: 8px;
+    margin-bottom: -3px;
+}
+.sub-menu1, .sub-menu2{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background: transparent;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: flex;
+    width: 1000px;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    border-radius: none;
+    background: transparent;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+    color: #7e5235c5;
+    transition: 0.3s;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:hover .sub-menu2{
+    position: absolute;
+    display: block;
+    margin-left: 140px;
+    background: #7e5235c5;
+    margin-top: -46px;
+}
+
+/*-----------------------------------------CONTAINER-------------------------------------------*/
+
+.container{
+    text-align: center;
+    margin-top: 80px;
+}
+.container .cont1 h1{
+    font-size: 180px;
+    color: transparent;
+    background-image: url(../image/blanc.jpg);
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    -webkit-background-clip: text;
+    font-family:Sport;
+    animation: animate 5s linear 0s infinite alternate;
+ }
+ @keyframes animate{
+     100%{
+         background-position: -500px 0;
+     }
+ }
+.container .cont1 p{
+    font-size: 35px;
+    margin: 20px;
+    color: black;
+    font-family: Streetbomber personal use;
+}
+.container .cont1 p span{
+    font-size: 40px;
+    color: rgb(161, 32, 39);
+}
+.container .cont2{
+    margin: 40px;
+}
+.container .cont2 a{
+    font-size: 30px;
+    padding: 10px;
+    color: orange;
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+}
+.container .cont2 a:hover{
+    color: white;
+}
+.container .cont2 a::before{
+    content: '';
+    background: #ecdd09;
+    height: 3px;
+    width: 20%;
+    margin: 5px 40%;
+    display: block;
+    transition: all 1s;
+}
+.container .cont2 a::after{
+    content: '';
+    background: #0cbd47;
+    height: 3px;
+    width: 0%;
+    margin: 5px 40%;
+    display: block;
+    transition: all 1s;
+}
+.container .cont2 a:hover:before{
+    width: 0%;
+}
+.container .cont2 a:hover::after{
+    width: 20%;
+}
+.slider{
+    width: 1000px;
+    overflow: hidden;
+    margin: 150px auto;
+   
+}
+.slider1{
+    float: left;
+}
+.sliders{
+    width: calc(1000px * 7);
+    animation: glisse 15s infinite;
+}
+@keyframes glisse {
+    0%{
+        transform: translateX(0);
+    }
+    14%{
+        transform: translateX(-1000px);
+    }
+
+    28%{         
+        transform: translateX(-2000px);
+    }
+    43%{
+        transform: translateX(-3000px);
+    }
+    57%{
+        transform: translateX(-4000px);
+    }
+    72%{         
+        transform: translateX(-5000px);
+    }
+    86%{
+        transform: translateX(-6000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.slider1 img{
+    width: 1000px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px black;
+
+}
+.a {
+    color: rgb(187, 98, 47);
+}
+
+
+
+/*------------------------------------------------------------FOOTER-----------------------------*/
+footer{
+    border: 1px solid;
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 5%;
+    background-color: rgb(209, 199, 208);
+    border-radius: 20px;
+    }
+    footer p{
+      color: black;
+      margin: 20px;
+    }
+    footer h3{
+      font-size: 30px;
+      margin-top: 2%;
+    }
+    .org{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .org .part{
+        width: 30%;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 20px;
+        padding: 5px;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .org .part:hover{
+        width: 32%;
+        border-radius: 6px;
+        box-shadow: 2px 5px 3px black;
+        margin: 8px;
+    }
+    .org .part:hover p{
+        font-size: 18px;
+    }
+    .org .part h4{
+        font-size: 25px;
+        margin: 5px;
+    }
+    .org .part p{
+        font-size: 15px;
+        color: #002;
+    }
+    .social-target{
+      width: 50px;
+      border: none;
+      padding: 7px;
+      border-radius: 30%;
+      margin-left: 20px;
+      background-color: #fff;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .social-target:hover{
+        background-color: black;
+        margin-top: 2px;
+      }
+   
+@media only screen and (max-width: 1000px) {
+    .org .part:hover p{
+        font-size: 15px;
+    }
+    .org .part p{
+        font-size: 10px;
+    }
+    .org .part h4{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .org .part:hover p{
+        font-size: 12px;
+    }
+    .org .part p{
+        font-size: 10px;
+    }
+    .org .part h4{
+        font-size: 17px;
+    }
+    footer h3{
+        font-size: 25px;
+        margin-top: 1%;
+      }
+}
+/* @media only screen and (max-width: 400px) {
+    .org .part:hover p{
+        font-size: 8px;
+    }
+    footer p{
+        margin: 10px;
+      }
+    .org .part{
+        border-radius: 3px;
+        margin: 10px;
+        padding: 3px;
+    }
+    .org .part p{
+        font-size: 8px;
+    }
+    .org .part h4{
+        font-size: 15px;
+    }
+} */
+@media only screen and (max-width: 600px) {
+    .org .part:hover p{
+        font-size: 12px;
+    }
+    footer p{
+        margin: 8px;
+      }
+    .org .part{
+        width: 80%;
+        border-radius: 3px;
+        margin: 5px;
+        padding: 1px;
+        margin: auto;
+        align-items: center;
+    }
+    .org .part:hover{
+        width: 72%;
+        margin: auto;
+    }
+    .org .part p{
+        font-size: 10px;
+    }
+    .org .part h4{
+        font-size: 14px;
+    }
+    .org{
+        height: auto;
+        display: block;
+    }
+}
+
+footer h1 {
+    text-align: center;
+}
