@@ -94,7 +94,7 @@ body{
 .container .cont1 h1{
     font-size: 180px;
     color: transparent;
-    background-image: url(../image/blanc.jpg);
+    background-image: url(../image/bin.jpg);
     -webkit-text-stroke: 3px rgb(0, 0, 0);
     -webkit-background-clip: text;
     font-family:Sport;
